@@ -8,20 +8,15 @@ function Layout({ children }) {
     <div className="flex flex-col font-sans min-h-screen text-gray-900">
       <Header />
 
-      <main className="flex flex-col flex-1 justify-center mx-auto w-full">
+      <main className="flex flex-col flex-1 mx-auto w-full">
         {children}
       </main>
 
-      <footer className="bg-blue-700">
+      <footer className="bg-black">
         <nav className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
-          <p className="text-white">
-            Created by{` `}
-            <a
-              className="font-bold no-underline text-white"
-              href="https://bryant.io"
-            >
-              Taylor Bryant
-            </a>
+          <p className="text-white font-bold">
+            Tap Tourist{` `}
+            
           </p>
 
           <p>
@@ -29,7 +24,7 @@ function Layout({ children }) {
               className="font-bold no-underline text-white"
               href="https://github.com/taylorbryant/gatsby-starter-tailwind"
             >
-              GitHub
+              MDC
             </a>
           </p>
         </nav>
