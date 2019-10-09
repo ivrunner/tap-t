@@ -11,14 +11,15 @@ function IndexPage({ data }) {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
-<div class="">
+      <div class="">
             <a href="https://www.target.com/gift-registry/giftgiver?registryId=4c7068963df6485085c9dffff837aa66&type=WEDDING">
-              <Img fluid={data.imageOne.childImageSharp.fluid}
+              <Img fluid={data.topBg.childImageSharp.fluid}
                 class=""
                 alt="Target Logo"
               />
             </a>
           </div>
+
       <section className="text-center">
         <img
           alt="Cat and human sitting on a couch"
@@ -50,6 +51,13 @@ export default IndexPage;
 export const pageQuery = graphql`
   query {
     imageOne: file(relativePath: { eq: "IMG_8958.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    topBg: file(relativePath: { eq: "top-bg-image.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

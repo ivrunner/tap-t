@@ -16,7 +16,7 @@ function Header() {
 
   return (
     <header className="bg-black text-white">
-      <nav class="flex items-center justify-between flex-wrap bg-black p-6">
+      <nav class="flex items-center justify-between flex-wrap bg-black pl-6 pr-6 pt-2 pb-2">
   <div class="flex items-center flex-shrink-0 text-white mr-6 ">
   <img
           alt="Tap Tourist"
