@@ -1,17 +1,24 @@
 import React from "react";
-
+import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
-function IndexPage() {
+function IndexPage({ data }) {
   return (
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
-
+<div class="">
+            <a href="https://www.target.com/gift-registry/giftgiver?registryId=4c7068963df6485085c9dffff837aa66&type=WEDDING">
+              <Img fluid={data.imageOne.childImageSharp.fluid}
+                class=""
+                alt="Target Logo"
+              />
+            </a>
+          </div>
       <section className="text-center">
         <img
           alt="Cat and human sitting on a couch"
@@ -39,3 +46,15 @@ function IndexPage() {
 }
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "IMG_8958.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
