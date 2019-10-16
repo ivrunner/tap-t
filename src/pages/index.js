@@ -6,6 +6,8 @@ import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 import ttLogoblack from "../images/tt-logo-black.svg";
 import ttLogowhite from "../images/tt-logo-white.svg";
 import ttBlacktext from "../images/Group.svg";
+import reservationtext from "../images/reservation.svg";
+import servicestext from "../images/services.svg";
 
 function IndexPage({ data }) {
   return (
@@ -56,6 +58,58 @@ function IndexPage({ data }) {
         1500s, when an unknown printer took a galley of type and scrambled it to
         make a type specimen book.{" "}
       </p>
+      <div class='text-2xl font-bold inline-block my-0 pt-2'>
+        <Img
+          fluid={data.resHm.childImageSharp.fluid}
+          class=''
+          alt='Target Logo'
+        />
+      </div>
+      <div class='text-center py-5'>
+        <h1 className='font-extrabold text-pink text-2xl'>MAKE A</h1>
+        <div className='bg-white text-center w-full relative pin'>
+          <img
+            src={reservationtext}
+            style={{
+              position: "static"
+            }}
+            className='block mx-auto w-full px-10'
+            alt='Tap Tourist Logo'
+          />
+        </div>
+        <p className='font-medium text-center py-5 px-2'>
+          This is a bunch of dummy text. Neil, this is where you need to think
+          about what you want these sections to say. Now onto the real dummy
+          text: Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.{" "}
+        </p>
+        <button class='btn-blue'>RESERVATIONS</button>
+      </div>
+      <div class='text-2xl font-bold inline-block my-0 pt-2'>
+        <Img fluid={data.serHm.childImageSharp.fluid} class='' alt='Services' />
+      </div>
+      <div class='text-center py-5'>
+        <h1 className='font-extrabold text-pink text-2xl'>CHECK OUT OUR</h1>
+        <div className='bg-white text-center w-full relative pin'>
+          <img
+            src={servicestext}
+            style={{
+              position: "static"
+            }}
+            className='block mx-auto w-full px-10'
+            alt='Services'
+          />
+        </div>
+        <p className='font-medium text-center py-5 px-2'>
+          This is a bunch of dummy text. Neil, this is where you need to think
+          about what you want these sections to say. Now onto the real dummy
+          text: Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.{" "}
+        </p>
+        <button class='btn-blue'>OUR SERVICES</button>
+      </div>
     </Layout>
   );
 }
@@ -72,6 +126,20 @@ export const pageQuery = graphql`
       }
     }
     topBg: file(relativePath: { eq: "top-bg-image.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    resHm: file(relativePath: { eq: "reservation-home.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    serHm: file(relativePath: { eq: "services-home.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

@@ -2,35 +2,54 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import dogIllustration from "../images/dog-illustration.svg";
+import about from "../images/about.svg";
+import us from "../images/us.svg";
 
 function AboutPage() {
   return (
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="About"
+        title='About'
       />
 
-      <section className="flex flex-col md:flex-row items-center">
-        <div className="md:w-2/3 md:mr-8">
-          <blockquote className="border-l-4 border-gray-900 font-serif leading-loose pl-4 text-justify">
-            The point is... to live one's life in the full complexity of what
-            one is, which is something much darker, more contradictory, more of
-            a maelstrom of impulses and passions, of cruelty, ecstacy, and
-            madness, than is apparent to the civilized being who glides on the
-            surface and fits smoothly into the world.
-          </blockquote>
-
-          <cite className="font-bold mt-4 text-right text-xs uppercase block">
-            – Thomas Nagel
-          </cite>
+      <div className='flex flex-wrap items-center justify-center text-center'>
+        <div className='bg-white text-center w-full relative pin'>
+          <img
+            src={about}
+            style={{
+              position: "static"
+            }}
+            className='block mx-auto w-full px-20 py-6'
+            alt='Services'
+          />
         </div>
-
-        <figure className="w-2/3 md:w-1/3">
-          <img alt="A dog relaxing" src={dogIllustration} />
-        </figure>
-      </section>
+        <p className='font-medium text-center py-5 px-2'>
+          This is a bunch of dummy text. Neil, this is where you need to think
+          about what you want these sections to say. Now onto the real dummy
+          text: Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.This is a bunch of dummy
+          text. Neil, this is where you need to think about what you want these
+          sections to say. Now onto the real dummy text: Lorem Ipsum has been
+          the industry's standard dummy text ever since the 1500s, when an
+          unknown printer took a galley of type and scrambled it to make a type
+          specimen book.{" "}
+        </p>
+        <div class='text-center py-5'>
+          <h1 className='font-extrabold text-pink text-2xl'>FOLLOW US</h1>
+          <div className='bg-white text-center w-full relative pin'>
+            <img
+              src={us}
+              style={{
+                position: "static"
+              }}
+              className='block mx-auto w-full px-10'
+              alt='Services'
+            />
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 }

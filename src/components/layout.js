@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import Header from "./header";
+import mdcCredit from "../images/mdc-credit.svg";
 
 function Layout({ children }) {
   return (
@@ -11,16 +12,25 @@ function Layout({ children }) {
       <main className='flex flex-col flex-1'>{children}</main>
 
       <footer className='bg-black'>
-        <nav className='flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm'>
-          <p className='text-white font-bold'>Tap Tourist{` `}</p>
-
-          <p>
-            <a
-              className='font-bold no-underline text-white'
-              href='https://github.com/taylorbryant/gatsby-starter-tailwind'>
-              MDC
-            </a>
+        <nav className='py-5 px-2'>
+          <p className='text-white'>© 2019 TAP TOURIST{` `}</p>
+          <p className='block text-white'>PHONE: 260-341-7792{` `}</p>
+          <p className='block text-white'>
+            EMAIL: EVENTS@THETAPTOURIST.COM{` `}
           </p>
+          <div className='text-white w-full'>
+            <a href='http://richmatney.com'>
+              DESIGNED BY:{" "}
+              <img
+                src={mdcCredit}
+                style={{
+                  position: "static"
+                }}
+                className='inline-block w-10 py-2'
+                alt='Services'
+              />
+            </a>
+          </div>
         </nav>
       </footer>
     </div>
