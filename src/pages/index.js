@@ -30,7 +30,7 @@ function IndexPage({ data }) {
         </div>
       </div>
       <div class='text-center py-5'>
-        <h1 className='text-pink text-2xl'>WHAT IS</h1>
+        <h1 className='font-extrabold text-pink text-2xl'>WHAT IS</h1>
         <div className='bg-white text-center w-full relative pin'>
           <img
             src={ttBlacktext}
@@ -49,7 +49,7 @@ function IndexPage({ data }) {
           alt='Target Logo'
         />
       </div>
-      <p className='text-center py-5 px-2'>
+      <p className='font-medium text-center py-5 px-2'>
         This is a bunch of dummy text. Neil, this is where you need to think
         about what you want these sections to say. Now onto the real dummy text:
         Lorem Ipsum has been the industry's standard dummy text ever since the

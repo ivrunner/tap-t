@@ -1,6 +1,8 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { useState } from "react";
 import ttlogo from "../images/tt-logo-name.svg";
+import fbIcon from "../images/facebook-black.svg";
+import instaIcon from "../images/instagram-black.svg";
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -16,10 +18,15 @@ function Header() {
 
   return (
     <header className='bg-black text-white'>
-      <nav class='flex items-center justify-between flex-wrap bg-black pl-6 pr-6 pt-2 pb-2'>
-        <button class='bg-pink hover:bg-pink-700 text-white font-bold py-2 px-4 rounded'>
-          Button
-        </button>
+      <nav class='flex items-center justify-between flex-wrap bg-black px-2 pt-2 pb-2'>
+        <div class='flex items-center flex-shrink-0 text-white mr-0 '>
+          <a href='http://facebook.com/taptouristco'>
+            <img alt='Facebook' className='px-1 w-10' src={fbIcon} />
+          </a>
+          <a href='https://www.instagram.com/taptouristco/'>
+            <img alt='Instagram' className='px-1 w-10' src={instaIcon} />
+          </a>
+        </div>
         <div class='flex items-center flex-shrink-0 text-white mr-6 '>
           <img alt='Tap Tourist' className='' src={ttlogo} />
           <svg
