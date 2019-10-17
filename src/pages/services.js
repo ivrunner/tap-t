@@ -36,19 +36,6 @@ function ServicesPage() {
           unknown printer took a galley of type and scrambled it to make a type
           specimen book.{" "}
         </p>
-        <div class='text-center py-5'>
-          <h1 className='font-extrabold text-pink text-2xl'>FOLLOW US</h1>
-          <div className='bg-white text-center w-full relative pin'>
-            <img
-              src={us}
-              style={{
-                position: "static"
-              }}
-              className='block mx-auto w-full px-10'
-              alt='Services'
-            />
-          </div>
-        </div>
       </div>
     </Layout>
   );
