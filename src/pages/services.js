@@ -2,25 +2,25 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import reservations from "../images/reservations.svg";
-import contact from "../images/contact.svg";
+import about from "../images/about.svg";
+import services from "../images/services.svg";
 
-function ContactPage() {
+function ServicesPage() {
   return (
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title='Contact'
+        title='Services'
       />
 
       <div className='flex flex-wrap items-center justify-center text-center'>
         <div className='bg-white text-center w-full relative pin'>
           <img
-            src={contact}
+            src={services}
             style={{
               position: "static"
             }}
-            className='block mx-auto w-full px-24 py-6'
+            className='block mx-auto w-full px-20 py-6'
             alt='Services'
           />
         </div>
@@ -36,9 +36,22 @@ function ContactPage() {
           unknown printer took a galley of type and scrambled it to make a type
           specimen book.{" "}
         </p>
+        <div class='text-center py-5'>
+          <h1 className='font-extrabold text-pink text-2xl'>FOLLOW US</h1>
+          <div className='bg-white text-center w-full relative pin'>
+            <img
+              src={us}
+              style={{
+                position: "static"
+              }}
+              className='block mx-auto w-full px-10'
+              alt='Services'
+            />
+          </div>
+        </div>
       </div>
     </Layout>
   );
 }
 
-export default ContactPage;
+export default ServicesPage;

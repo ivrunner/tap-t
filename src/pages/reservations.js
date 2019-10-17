@@ -3,24 +3,24 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import reservations from "../images/reservations.svg";
-import contact from "../images/contact.svg";
+import us from "../images/us.svg";
 
-function ContactPage() {
+function ReservationsPage() {
   return (
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title='Contact'
+        title='Reservations'
       />
 
       <div className='flex flex-wrap items-center justify-center text-center'>
         <div className='bg-white text-center w-full relative pin'>
           <img
-            src={contact}
+            src={reservations}
             style={{
               position: "static"
             }}
-            className='block mx-auto w-full px-24 py-6'
+            className='block mx-auto w-full px-20 py-6'
             alt='Services'
           />
         </div>
@@ -41,4 +41,4 @@ function ContactPage() {
   );
 }
 
-export default ContactPage;
+export default ReservationsPage;
