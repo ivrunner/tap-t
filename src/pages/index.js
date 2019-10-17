@@ -8,6 +8,7 @@ import ttLogowhite from "../images/tt-logo-white.svg";
 import ttBlacktext from "../images/Group.svg";
 import reservationtext from "../images/reservation.svg";
 import servicestext from "../images/services.svg";
+import us from "../images/us.svg";
 
 function IndexPage({ data }) {
   return (
@@ -58,7 +59,7 @@ function IndexPage({ data }) {
         1500s, when an unknown printer took a galley of type and scrambled it to
         make a type specimen book.{" "}
       </p>
-      <div class='text-2xl font-bold inline-block my-0 pt-2'>
+      <div class='text-2xl font-bold inline-block my-0 pt-6'>
         <Img
           fluid={data.resHm.childImageSharp.fluid}
           class=''
@@ -86,7 +87,7 @@ function IndexPage({ data }) {
         </p>
         <button class='btn-blue'>RESERVATIONS</button>
       </div>
-      <div class='text-2xl font-bold inline-block my-0 pt-2'>
+      <div class='text-2xl font-bold inline-block my-0 pt-6'>
         <Img fluid={data.serHm.childImageSharp.fluid} class='' alt='Services' />
       </div>
       <div class='text-center py-5'>
@@ -109,6 +110,67 @@ function IndexPage({ data }) {
           scrambled it to make a type specimen book.{" "}
         </p>
         <button class='btn-blue'>OUR SERVICES</button>
+      </div>
+      <div class='text-2xl font-bold inline-block my-0 pt-6'>
+        <Img
+          fluid={data.famPic.childImageSharp.fluid}
+          class=''
+          alt='Services'
+        />
+      </div>
+      <div class='text-center py-5'>
+        <h1 className='font-extrabold text-pink text-2xl'>ABOUT</h1>
+        <div className='bg-white text-center w-full relative pin'>
+          <img
+            src={us}
+            style={{
+              position: "static"
+            }}
+            className='block mx-auto w-1/2 px-6'
+            alt='Services'
+          />
+        </div>
+        <p className='font-medium text-center py-5 px-2'>
+          This is a bunch of dummy text. Neil, this is where you need to think
+          about what you want these sections to say. Now onto the real dummy
+          text: Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.{" "}
+        </p>
+        <a href='/about'>
+          <button class='btn-blue'>ABOUT US</button>
+        </a>
+      </div>
+      <div class='text-2xl font-bold inline-block my-0 pt-6'>
+        <Img
+          fluid={data.conHme.childImageSharp.fluid}
+          class=''
+          alt='Services'
+        />
+      </div>
+      <div class='text-center py-5'>
+        <h1 className='font-extrabold text-pink text-2xl'>CONTACT</h1>
+        <div className='bg-white text-center w-full relative pin'>
+          <img
+            src={us}
+            style={{
+              position: "static"
+            }}
+            className='block mx-auto w-1/2 px-6'
+            alt='Services'
+          />
+        </div>
+        <p className='font-medium text-center py-5 px-2'>
+          This is a bunch of dummy text. Neil, this is where you need to think
+          about what you want these sections to say. Now onto the real dummy
+          text: Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.{" "}
+        </p>
+        <a class='flex justify-around' href='/about'>
+          <button class='btn-blue'>CALL US</button>
+          <button class='btn-blue'>EMAIL US</button>
+        </a>
       </div>
     </Layout>
   );
@@ -140,6 +202,20 @@ export const pageQuery = graphql`
       }
     }
     serHm: file(relativePath: { eq: "services-home.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    famPic: file(relativePath: { eq: "familypic.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    conHme: file(relativePath: { eq: "contact-home.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

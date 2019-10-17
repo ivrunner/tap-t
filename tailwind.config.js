@@ -3,11 +3,14 @@
 module.exports = {
   theme: {
     extend: {
-       colors: {
-        black: '#221F1F',
-        pink: '#D9769F',
-        red: '#de3618',
-  }}},
+      colors: {
+        black: "#221F1F",
+        pink: "#D9769F",
+        pinkdark: "#C83D77",
+        red: "#de3618"
+      }
+    }
+  },
   variants: {},
   plugins: []
 };
