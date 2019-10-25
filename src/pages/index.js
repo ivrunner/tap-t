@@ -19,10 +19,15 @@ function IndexPage({ data }) {
       />
       <div class='flex flex-wrap items-center justify-center text-center'></div>
       <div className='flex flex-wrap items-center justify-center text-center'>
-        <div className='bg-white text-center w-full relative pin'>
+        <div className='bg-white text-center w-full relative pin lg:w-1/3'>
           <img
             src={ttLogoblack}
             style={{
+              backgroundImage:
+                "url(" +
+                "https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" +
+                ")",
+              backgroundPosition: "center",
               position: "static"
             }}
             className='block mx-auto w-full py-5 px-5'
@@ -33,83 +38,99 @@ function IndexPage({ data }) {
         </div>
       </div>
       <div class='text-center py-5'>
-        <h1 className='font-extrabold text-pink text-2xl'>WHAT IS</h1>
-        <div className='bg-white text-center w-full relative pin'>
-          <img
-            src={ttBlacktext}
-            style={{
-              position: "static"
-            }}
-            className='block mx-auto w-full px-10'
-            alt='Tap Tourist Logo'
-          />
+        <h1 className='font-extrabold text-pink text-2xl block'>WHAT IS</h1>
+        <div class='lg:flex lg:justify-center'>
+          <div className='block bg-white text-center w-full relative pin lg:w-1/3 lg:justify-center '>
+            <img
+              src={ttBlacktext}
+              style={{
+                position: "static"
+              }}
+              className='block mx-auto w-full px-10'
+              alt='Tap Tourist Logo'
+            />
+          </div>
         </div>
       </div>
-      <div class='text-2xl font-bold inline-block my-0 p-0'>
-        <Img
-          fluid={data.imgOne.childImageSharp.fluid}
-          class=''
-          alt='Target Logo'
-        />
-      </div>
-      <p className='font-medium text-center py-5 px-2'>
-        This is a bunch of dummy text. Neil, this is where you need to think
-        about what you want these sections to say. Now onto the real dummy text:
-        Lorem Ipsum has been the industry's standard dummy text ever since the
-        1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book.{" "}
-      </p>
-      <div class='text-2xl font-bold inline-block my-0 pt-6'>
-        <Img
-          fluid={data.resHm.childImageSharp.fluid}
-          class=''
-          alt='Target Logo'
-        />
-      </div>
-      <div class='text-center py-5'>
-        <h1 className='font-extrabold text-pink text-2xl'>MAKE A</h1>
-        <div className='bg-white text-center w-full relative pin'>
-          <img
-            src={reservationtext}
-            style={{
-              position: "static"
-            }}
-            className='block mx-auto w-full px-10'
-            alt='Tap Tourist Logo'
+      <div class='lg:flex'>
+        <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:mx-10'>
+          <Img
+            fluid={data.imgOne.childImageSharp.fluid}
+            class=''
+            alt='Target Logo'
           />
         </div>
-        <p className='font-medium text-center py-5 px-2'>
+        <p className='font-medium text-center py-5 px-2 lg:w-1/2 lg:m-10 lg:text-xl'>
           This is a bunch of dummy text. Neil, this is where you need to think
           about what you want these sections to say. Now onto the real dummy
           text: Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.{" "}
         </p>
-        <button class='btn-blue'>RESERVATIONS</button>
       </div>
-      <div class='text-2xl font-bold inline-block my-0 pt-6'>
-        <Img fluid={data.serHm.childImageSharp.fluid} class='' alt='Services' />
+      <div class='lg:flex lg:pt-40'>
+        <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:mx-10'>
+          <Img
+            fluid={data.resHm.childImageSharp.fluid}
+            class=''
+            alt='Target Logo'
+          />
+        </div>
+        <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:py-0'>
+          <h1 className='font-extrabold text-pink text-2xl'>MAKE A</h1>
+          <div className='bg-white text-center w-full relative pin'>
+            <img
+              src={reservationtext}
+              style={{
+                position: "static"
+              }}
+              className='block mx-auto w-full px-10'
+              alt='Tap Tourist Logo'
+            />
+          </div>
+          <p className='font-medium text-center py-5 px-2'>
+            This is a bunch of dummy text. Neil, this is where you need to think
+            about what you want these sections to say. Now onto the real dummy
+            text: Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.{" "}
+          </p>
+          <a href='/reservations'>
+            <button class='btn-blue'>RESERVATIONS</button>
+          </a>
+        </div>
       </div>
-      <div class='text-center py-5'>
-        <h1 className='font-extrabold text-pink text-2xl'>CHECK OUT OUR</h1>
-        <div className='bg-white text-center w-full relative pin'>
-          <img
-            src={servicestext}
-            style={{
-              position: "static"
-            }}
-            className='block mx-auto w-full px-10'
+      <div class='lg:flex lg:pt-40'>
+        <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:mx-10'>
+          <Img
+            fluid={data.serHm.childImageSharp.fluid}
+            class=''
             alt='Services'
           />
         </div>
-        <p className='font-medium text-center py-5 px-2'>
-          This is a bunch of dummy text. Neil, this is where you need to think
-          about what you want these sections to say. Now onto the real dummy
-          text: Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.{" "}
-        </p>
-        <button class='btn-blue'>OUR SERVICES</button>
+        <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:py-0'>
+          <h1 className='font-extrabold text-pink text-2xl'>CHECK OUT OUR</h1>
+          <div className='bg-white text-center w-full relative pin'>
+            <img
+              src={servicestext}
+              style={{
+                position: "static"
+              }}
+              className='block mx-auto w-full px-10'
+              alt='Services'
+            />
+          </div>
+          <p className='font-medium text-center py-5 px-2'>
+            This is a bunch of dummy text. Neil, this is where you need to think
+            about what you want these sections to say. Now onto the real dummy
+            text: Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.{" "}
+          </p>
+          <a href='/services'>
+            <button class='btn-blue'>OUR SERVICES</button>
+          </a>
+        </div>
       </div>
       <div class='text-2xl font-bold inline-block my-0 pt-6'>
         <Img
@@ -167,10 +188,14 @@ function IndexPage({ data }) {
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.{" "}
         </p>
-        <a class='flex justify-around' href='/about'>
-          <button class='btn-blue'>CALL US</button>
-          <button class='btn-blue'>EMAIL US</button>
-        </a>
+        <div class='flex justify-around'>
+          <a href=''>
+            <button class='btn-blue'>CALL US</button>
+          </a>
+          <a href=''>
+            <button class='btn-blue'>EMAIL US</button>
+          </a>
+        </div>
       </div>
     </Layout>
   );
