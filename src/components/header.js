@@ -11,6 +11,7 @@ function Header() {
       site {
         siteMetadata {
           title
+          description
         }
       }
     }
