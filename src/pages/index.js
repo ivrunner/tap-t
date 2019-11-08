@@ -153,7 +153,7 @@ function IndexPage({ data }) {
             />
           </div>
           <p className='font-medium text-center py-5 px-2'>
-            Native Hoosiers, Neil and Sarah Pabla, are a husband and wife team
+            Native Hoosiers, Neil and Sarah Pabla are a husband and wife team
             excited to offer a unique beverage service to the entire state of
             Indiana. Neil and Sarah are both very proud to call the beautiful
             city of Fort Wayne home. They are beyond grateful for the
