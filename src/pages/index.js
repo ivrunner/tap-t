@@ -12,6 +12,9 @@ import us from "../images/us.svg";
 import bar from "../images/bar.svg";
 import events from "../images/events.svg";
 import tagLine from "../images/tag.svg";
+import tapSocial from "../images/tapsocial.svg";
+import fbIcon from "../images/facebook-black-home.svg";
+import instaIcon from "../images/instagram-black-home.svg";
 
 function IndexPage({ data }) {
   return (
@@ -50,7 +53,7 @@ function IndexPage({ data }) {
       <div class='lg:flex pt-5 lg:pt-20'>
         <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:mx-10'>
           <Img
-            fluid={data.imgOne.childImageSharp.fluid}
+            fluid={data.theBar.childImageSharp.fluid}
             class=''
             alt='Target Logo'
           />
@@ -72,6 +75,25 @@ function IndexPage({ data }) {
             mobile bar service. Celebrate with a twist and let Tap Tourist leave
             a lasting impression for you and your guests.{" "}
           </p>
+          <h1 className='font-extrabold text-pink text-2xl'>
+            FOLLOW TAP TOURIST!
+          </h1>
+          <img
+            src={tapSocial}
+            style={{
+              position: "static"
+            }}
+            className='block mx-auto w-3/4 px-10'
+            alt='Tap Tourist Social'
+          />
+          <div class='flex justify-center flex-shrink-0 text-white mr-0 '>
+            <a href='http://facebook.com/taptouristco'>
+              <img alt='Facebook' className='px-1 w-20' src={fbIcon} />
+            </a>
+            <a href='https://www.instagram.com/taptouristco/'>
+              <img alt='Instagram' className='px-1 w-20' src={instaIcon} />
+            </a>
+          </div>
         </div>
       </div>
       <div class='md:flex md:flex-row-reverse lg:pt-40'>
@@ -173,7 +195,7 @@ function IndexPage({ data }) {
       <div class='lg:flex lg:pt-40'>
         <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:my-auto lg:mx-10'>
           <Img
-            fluid={data.theBar.childImageSharp.fluid}
+            fluid={data.barPic.childImageSharp.fluid}
             class=''
             alt='Services'
           />
@@ -257,6 +279,13 @@ export const pageQuery = graphql`
       }
     }
     theBar: file(relativePath: { eq: "tt-trailer.JPG" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    barPic: file(relativePath: { eq: "barpic.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
