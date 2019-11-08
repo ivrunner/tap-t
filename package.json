@@ -22,10 +22,14 @@
     "react-helmet": "5.2.1"
   },
   "keywords": [
-    "gatsby",
-    "tailwind",
-    "tailwindcss",
-    "purgecss"
+    "tap",
+    "tourist",
+    "fort",
+    "wayne",
+    "mobile",
+    "bar",
+    "the",
+    "taptourist"
   ],
   "license": "MIT",
   "scripts": {
