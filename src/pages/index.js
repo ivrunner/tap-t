@@ -89,17 +89,17 @@ function IndexPage({ data }) {
             />
           </div>
           <ul class='font-medium text-center py-5 px-2'>
-            <li>Swanky Mobile Bar adding style to any event</li>
-            <li>Full Draft Service (Kegged beers and wine available)</li>
-            <li>All permit filings included</li>
-            <li>Licensed and experienced bartenders</li>
+            <li>- Swanky mobile bar adding style to any event</li>
+            <li>- Full draft service (kegged beers and wine available)</li>
+            <li>- All permit filings included</li>
+            <li>- Licensed and experienced bartenders</li>
             <li>
-              Full coverage liability as well as liquor liability insurance
+              - Full coverage liability as well as liquor liability insurance
               provided
             </li>
-            <li>Cocktail service available (pending event location)</li>
-            <li>Water stations provided</li>
-            <li>Non-alcoholic beverage service available</li>
+            <li>- Cocktail service available (pending event location)</li>
+            <li>- Water stations provided</li>
+            <li>- Non-alcoholic beverage service available</li>
           </ul>
         </div>
       </div>
@@ -124,10 +124,10 @@ function IndexPage({ data }) {
             />
           </div>
           <p className='font-medium text-center py-5 px-2'>
-            Tap Tourist has you covered from Weddings to Corporate Events. We
-            also handle Large Crowd events that require quick and reliable
-            service. From Graduation Parties, Reunions, Birthday Parties; Tap
-            Tourist can create a seamless and great expereince for you and your
+            Tap Tourist has you covered from weddings to corporate events. We
+            also handle large crowd events that require quick and reliable
+            service. From graduation parties, reunions, birthday parties; tap
+            tourist can create a seamless and great expereince for you and your
             guests!{" "}
           </p>
         </div>
