@@ -3,6 +3,8 @@ import React from "react";
 
 import Header from "./header";
 import mdcCredit from "../images/mdc-credit.svg";
+import fbIcon from "../images/facebook-black.svg";
+import instaIcon from "../images/instagram-black.svg";
 
 function Layout({ children }) {
   return (
@@ -24,6 +26,18 @@ function Layout({ children }) {
                 <p className='block text-white'>
                   EMAIL: EVENTS@THETAPTOURIST.COM{` `}
                 </p>
+              </a>
+            </div>
+            <div class='text-gray-700 text-center bg-black px-4 py-2 m-2'>
+              <a href='http://facebook.com/taptouristco'>
+                <img alt='Facebook' className='inline px-1 w-10' src={fbIcon} />
+              </a>
+              <a href='https://www.instagram.com/taptouristco/'>
+                <img
+                  alt='Instagram'
+                  className='inline px-1 w-10'
+                  src={instaIcon}
+                />
               </a>
             </div>
             <div class='text-white text-center bg-black px-4 py-2 m-2'>

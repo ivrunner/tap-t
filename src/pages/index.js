@@ -17,7 +17,15 @@ function IndexPage({ data }) {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[
+          `tap`,
+          `tourist`,
+          `fort`,
+          `wayne`,
+          `mobile`,
+          `bar`,
+          `vintage`
+        ]}
         title='Home'
       />
       <div class='flex flex-wrap items-center justify-center text-center'></div>
@@ -48,9 +56,7 @@ function IndexPage({ data }) {
           />
         </div>
         <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:py-0'>
-          <h1 className='font-extrabold text-pink text-2xl'>
-            WHAT IS TAP TOURIST?
-          </h1>
+          <h1 className='font-extrabold text-pink text-2xl'>WHAT IS</h1>
           <div className='bg-transparent text-center w-full relative pin'>
             <img
               src={ttBlacktext}
