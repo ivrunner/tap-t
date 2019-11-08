@@ -6,7 +6,7 @@ import mdcCredit from "../images/mdc-credit.svg";
 
 function Layout({ children }) {
   return (
-    <div className='flex flex-col font-serif min-h-screen text-gray-900'>
+    <div className='mainbackground flex flex-col font-serif min-h-screen text-gray-900 bg-gray'>
       <Header />
 
       <main className='flex flex-col flex-1 md:max-w-6xl md:mx-auto'>

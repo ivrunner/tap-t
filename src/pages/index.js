@@ -22,7 +22,7 @@ function IndexPage({ data }) {
       />
       <div class='flex flex-wrap items-center justify-center text-center'></div>
       <div className='flex flex-wrap items-center justify-center text-center'>
-        <div className='bg-white text-center w-full relative pin lg:w-1/2'>
+        <div className='bg-transparent text-center w-full relative pin lg:w-1/2'>
           <img
             src={ttLogoblack}
             className='block mx-auto w-full py-5 px-5'
@@ -51,7 +51,7 @@ function IndexPage({ data }) {
           <h1 className='font-extrabold text-pink text-2xl'>
             WHAT IS TAP TOURIST?
           </h1>
-          <div className='bg-white text-center w-full relative pin'>
+          <div className='bg-transparent text-center w-full relative pin'>
             <img
               src={ttBlacktext}
               style={{
@@ -78,7 +78,7 @@ function IndexPage({ data }) {
         </div>
         <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:py-0'>
           <h1 className='font-extrabold text-pink text-2xl'>CHECK OUT OUR</h1>
-          <div className='bg-white text-center w-full relative pin'>
+          <div className='text-center w-full relative pin'>
             <img
               src={servicestext}
               style={{
@@ -113,7 +113,7 @@ function IndexPage({ data }) {
         </div>
         <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:py-0'>
           <h1 className='font-extrabold text-pink text-2xl'>WHAT TYPE OF</h1>
-          <div className='bg-white text-center w-full relative pin'>
+          <div className='bg-transparent text-center w-full relative pin'>
             <img
               src={events}
               style={{
@@ -142,7 +142,7 @@ function IndexPage({ data }) {
         </div>
         <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:py-0'>
           <h1 className='font-extrabold text-pink text-2xl'>ABOUT</h1>
-          <div className='bg-white text-center w-full relative pin'>
+          <div className='bg-transparent text-center w-full relative pin'>
             <img
               src={us}
               style={{
@@ -175,7 +175,7 @@ function IndexPage({ data }) {
         <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:pb-5 lg:py-0'>
           <div class='text-center'>
             <h1 className='font-extrabold text-pink text-2xl'>THE</h1>
-            <div className='bg-white text-center w-full relative pin'>
+            <div className='bg-transparent text-center w-full relative pin'>
               <img
                 src={bar}
                 style={{
