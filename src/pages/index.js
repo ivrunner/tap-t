@@ -126,8 +126,8 @@ function IndexPage({ data }) {
           <p className='font-medium text-center py-5 px-2'>
             Tap Tourist has you covered from weddings to corporate events. We
             also handle large crowd events that require quick and reliable
-            service. From graduation parties, reunions, birthday parties; tap
-            tourist can create a seamless and great expereince for you and your
+            service. From graduation parties, reunions, birthday parties; Tap
+            Tourist can create a seamless and great experience for you and your
             guests!{" "}
           </p>
         </div>
