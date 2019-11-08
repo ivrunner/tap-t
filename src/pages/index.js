@@ -11,6 +11,7 @@ import servicestext from "../images/services.svg";
 import us from "../images/us.svg";
 import bar from "../images/bar.svg";
 import events from "../images/events.svg";
+import tagLine from "../images/tag.svg";
 
 function IndexPage({ data }) {
   return (
@@ -21,34 +22,24 @@ function IndexPage({ data }) {
       />
       <div class='flex flex-wrap items-center justify-center text-center'></div>
       <div className='flex flex-wrap items-center justify-center text-center'>
-        <div className='bg-white text-center w-full relative pin lg:w-1/3'>
+        <div className='bg-white text-center w-full relative pin lg:w-1/2'>
           <img
             src={ttLogoblack}
             className='block mx-auto w-full py-5 px-5'
             alt='Tap Tourist Logo'
           />
-          <h1 className='text-2xl px-1 pb-5'>
-            Fort Wayne’s First Vintage Mobile Bar
-          </h1>
-          <button class='btn-blue'>GET A QOUTE</button>
+          <img
+            src={tagLine}
+            className='block mx-auto w-full px-5 py-2 lg:px-0'
+            alt='Tap Tourist Logo'
+          />
+          <a href='mailto:events@thetaptourist.com'>
+            <button class='btn-blue'>CONTACT US!</button>
+          </a>
         </div>
       </div>
-      <div class='text-center py-5'>
-        <h1 className='font-extrabold text-pink text-2xl block'>WHAT IS</h1>
-        <div class='lg:flex lg:justify-center'>
-          <div className='block bg-white text-center w-full relative pin lg:w-1/3 lg:justify-center '>
-            <img
-              src={ttBlacktext}
-              style={{
-                position: "static"
-              }}
-              className='block mx-auto w-full px-10'
-              alt='Tap Tourist Logo'
-            />
-          </div>
-        </div>
-      </div>
-      <div class='lg:flex'>
+
+      <div class='lg:flex pt-5 lg:pt-20'>
         <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:mx-10'>
           <Img
             fluid={data.imgOne.childImageSharp.fluid}
@@ -56,15 +47,29 @@ function IndexPage({ data }) {
             alt='Target Logo'
           />
         </div>
-
-        <p className='font-medium text-center py-5 px-2 lg:w-1/2 lg:m-10 lg:text-xl'>
-          Tap Tourist Mobile Beverage Co. offers Fort Wayne’s first vintage
-          mobile bar service. Celebrate with a twist and let Tap Tourist leave a
-          lasting impression for you and your guests.{" "}
-        </p>
+        <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:py-0'>
+          <h1 className='font-extrabold text-pink text-2xl'>
+            WHAT IS TAP TOURIST?
+          </h1>
+          <div className='bg-white text-center w-full relative pin'>
+            <img
+              src={ttBlacktext}
+              style={{
+                position: "static"
+              }}
+              className='block mx-auto w-full px-10'
+              alt='Bar Picture'
+            />
+          </div>
+          <p className='ffont-medium text-center py-5 px-2'>
+            Tap Tourist Mobile Beverage Co. offers Fort Wayne’s first vintage
+            mobile bar service. Celebrate with a twist and let Tap Tourist leave
+            a lasting impression for you and your guests.{" "}
+          </p>
+        </div>
       </div>
       <div class='md:flex md:flex-row-reverse lg:pt-40'>
-        <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:mx-10'>
+        <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:my-auto lg:mx-10'>
           <Img
             fluid={data.resHm.childImageSharp.fluid}
             class=''
@@ -99,11 +104,11 @@ function IndexPage({ data }) {
         </div>
       </div>
       <div class='lg:flex lg:pt-40'>
-        <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:mx-10'>
+        <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:my-auto lg:mx-10'>
           <Img
             fluid={data.serHm.childImageSharp.fluid}
             class=''
-            alt='Services'
+            alt='Events Picture'
           />
         </div>
         <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:py-0'>
@@ -122,17 +127,17 @@ function IndexPage({ data }) {
             Tap Tourist has you covered from Weddings to Corporate Events. We
             also handle Large Crowd events that require quick and reliable
             service. From Graduation Parties, Reunions, Birthday Parties; Tap
-            Touris can create a seamless and great expereince for you and your
+            Tourist can create a seamless and great expereince for you and your
             guests!{" "}
           </p>
         </div>
       </div>
-      <div class='md:flex md:flex-row-reverse lg:flex lg:pt-40'>
-        <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:mx-10'>
+      <div class='md:flex md:flex-row-reverse lg:flex lg:my-auto lg:pt-40'>
+        <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:my-auto lg:mx-10'>
           <Img
             fluid={data.famPic.childImageSharp.fluid}
             class=''
-            alt='Services'
+            alt='About Us Picture'
           />
         </div>
         <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:py-0'>
@@ -167,7 +172,7 @@ function IndexPage({ data }) {
             alt='Services'
           />
         </div>
-        <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:pb-5'>
+        <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:pb-5 lg:py-0'>
           <div class='text-center'>
             <h1 className='font-extrabold text-pink text-2xl'>THE</h1>
             <div className='bg-white text-center w-full relative pin'>
@@ -180,7 +185,7 @@ function IndexPage({ data }) {
                 alt='Services'
               />
             </div>
-            <p className='font-medium text-center py-5 px-2'>
+            <p className='font-medium text-center py-5 pb-2'>
               While searching for the perfect piece to convert to a mobile bar,
               Neil and Sarah knew they wanted something with character and
               history. They were lucky enough to come across the Ricketts
@@ -195,10 +200,7 @@ function IndexPage({ data }) {
               come.{" "}
             </p>
             <div class='flex justify-around'>
-              <a href=''>
-                <button class='btn-blue'>CALL US</button>
-              </a>
-              <a href=''>
+              <a href='mailto:events@thetaptourist.com'>
                 <button class='btn-blue'>EMAIL US</button>
               </a>
             </div>
@@ -241,14 +243,14 @@ export const pageQuery = graphql`
         }
       }
     }
-    famPic: file(relativePath: { eq: "familypic.png" }) {
+    famPic: file(relativePath: { eq: "aboutpic.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    theBar: file(relativePath: { eq: "thebar.jpg" }) {
+    theBar: file(relativePath: { eq: "tt-trailer.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

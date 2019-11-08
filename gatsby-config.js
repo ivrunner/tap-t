@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Tap Tourist`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`
+    description: `Fort Wayne's First Vintage Mobile Bar`,
+    author: `MDC`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -6,7 +6,7 @@ import mdcCredit from "../images/mdc-credit.svg";
 
 function Layout({ children }) {
   return (
-    <div className='flex flex-col font-sans min-h-screen text-gray-900'>
+    <div className='flex flex-col font-serif min-h-screen text-gray-900'>
       <Header />
 
       <main className='flex flex-col flex-1 md:max-w-6xl md:mx-auto'>
@@ -18,13 +18,13 @@ function Layout({ children }) {
             <div class='text-gray-700 text-center bg-black px-4 py-2 m-2'>
               <p className='text-white'>© 2019 TAP TOURIST{` `}</p>
             </div>
+
             <div class='text-gray-700 text-center bg-black px-4 py-2 m-2'>
-              <p className='block text-white'>PHONE: 260-341-7792{` `}</p>
-            </div>
-            <div class='text-gray-700 text-center bg-black px-4 py-2 m-2'>
-              <p className='block text-white'>
-                EMAIL: EVENTS@THETAPTOURIST.COM{` `}
-              </p>
+              <a href='mailto:events@thetaptourist.com'>
+                <p className='block text-white'>
+                  EMAIL: EVENTS@THETAPTOURIST.COM{` `}
+                </p>
+              </a>
             </div>
             <div class='text-white text-center bg-black px-4 py-2 m-2'>
               <a href='http://richmatney.com'>
