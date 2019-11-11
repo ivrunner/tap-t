@@ -101,7 +101,7 @@ function IndexPage({ data }) {
           <Img
             fluid={data.resHm.childImageSharp.fluid}
             class=''
-            alt='Target Logo'
+            alt='Reservation Image'
           />
         </div>
         <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:py-0'>
