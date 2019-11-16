@@ -51,12 +51,18 @@ function IndexPage({ data }) {
       </div>
 
       <div class='lg:flex pt-5 lg:pt-20'>
-        <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:mx-10'>
-          <Img
-            fluid={data.theBar.childImageSharp.fluid}
-            class=''
-            alt='Target Logo'
-          />
+        <div class='lg:w-full lg:mx-0'>
+          <div class='videoWrapper'>
+            <iframe
+              title='Boxmate Video'
+              width='560'
+              height='315'
+              src='https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTapTouristCo%2Fvideos%2F424274311839217%2F&show_text=0&width=560'
+              frameborder='0'
+              allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+              allowfullscreen
+            />
+          </div>
         </div>
         <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:py-0'>
           <h1 className='font-extrabold text-pink text-2xl'>WHAT IS</h1>
