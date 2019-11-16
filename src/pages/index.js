@@ -60,7 +60,7 @@ function IndexPage({ data }) {
               src='https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTapTouristCo%2Fvideos%2F424274311839217%2F&show_text=0&width=560'
               frameborder='0'
               allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-              allowfullscreen
+              allowfullscreen='true'
             />
           </div>
         </div>
