@@ -105,9 +105,9 @@ function IndexPage({ data }) {
       <div class='md:flex md:flex-row-reverse lg:pt-40'>
         <div class='text-2xl font-bold my-0 p-0 lg:w-1/2 lg:my-auto lg:mx-10'>
           <Img
-            fluid={data.resHm.childImageSharp.fluid}
+            fluid={data.theBar.childImageSharp.fluid}
             class=''
-            alt='Reservation Image'
+            alt='Bar Image'
           />
         </div>
         <div class='text-center py-5 lg:w-1/2 lg:mx-10 lg:text-xl lg:py-0'>
